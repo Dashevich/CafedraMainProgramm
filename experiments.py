@@ -51,14 +51,14 @@ def draw(subj, theme):   # переотрисовка окна
                 story = i.split("# &")[1]
                 story = story.split('\n')[0]
                 text1 = text.render(story, True, (0, 0, 0))
-                screen.blit(text1, (280, y))
+                screen.blit(text1, (160, y))
                 y += 35
         demo_file.close()
 
     else:
         story = "Заданий нет"
         text1 = text.render(story, True, (0, 0, 0))
-        screen.blit(text1, (280, 120))
+        screen.blit(text1, (160, 120))
 
 
 while is_running:  # основной цикл
